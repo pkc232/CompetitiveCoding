@@ -1,0 +1,17 @@
+STRING HASHING
+
+http://codeforces.com/contest/727/problem/E
+
+
+We have to just find the break point in this question. Once we find the breakpoint we just have to print all the continuous substrings of length k.
+
+There can be at max n break points.
+This problem I solved using hashing.
+
+For all the g strings provided first calculate their hashvalue and store in an unordered_set "present".
+Append the copy of the string to itself. Let it be totstring.
+Next use rolling hash on the totstring considering each substring of length k,compute its hash
+(using rollhash). Then if this hash is present in the unordered_set "present" increase the count of
+that breakpoint by 1. Means count[i%k]++.
+
+Now iterate through all the breakpoints and if their count is n,means its a possible solution.

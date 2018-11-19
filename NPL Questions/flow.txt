@@ -1,0 +1,46 @@
+<p>
+The ACM team needs to prepare $K$ problems for NPL over $N$ days.
+Each problem, once prepared, also has to be printed.
+The preparation of a problem on day $i$ (at most one per day) costs <b>A<sub>i</sub></b> rupees, and the printing of a problem on day $i$ (also at most one per day) costs <b>B<sub>i</sub></b> rupees. Of course, a problem cannot be printed before it has been prepared (but doing both on the same day is fine).
+What is the minimum cost of preparation and printing?
+</p>
+
+<p>
+<b>Input:</b>
+The first line contains $T$ - the number of test cases.<br>
+Each test case has three lines of input.<br>
+The first line of input contains two space-separated integers $N$ and $K$.<br>
+The second line contains $N$ space-separated integers A<sub>1</sub>, ..., A<sub>n</sub> — the preparation costs. <br> 
+The third line contains $N$ space-separated integers B<sub>1</sub>, ..., B<sub>n</sub>  — the printing costs. <br>
+</p>
+
+<p>
+<b>Output:</b>
+For each test case output the minimum cost of preparation and printing $K$ problems on a new line.
+</p>
+
+<p>
+<b>Constraints</b>:<br>
+1 <= K <= N <= 2200 <br>
+1 <= A<sub>i</sub> <= 10^9 <br>
+1 <= B<sub>i</sub> <= 10^9 <br>
+
+</p>
+
+<p>
+Sample Input:<br>
+	1<br>
+	8 4<br>
+	3 8 7 9 9 4 6 8<br>
+	2 5 9 4 3 8 9 1<br>
+</p>
+
+<p>
+Sample Output:<br>
+	32
+</p>
+
+<p>
+Explanation:<br>
+In the sample testcase, one optimum solution is to prepare the first problem on day 1 and print it on day 1, prepare the second problem on day 2 and print it on day 4, prepare the third problem on day 3 and print it on day 5, and prepare the fourth problem on day 6 and print it on day 8.
+</p>

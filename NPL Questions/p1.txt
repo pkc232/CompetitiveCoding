@@ -1,0 +1,63 @@
+Avinash, Somesh, Kanakdeep and Shibam have started playing PUBG as a team.
+As all of them are noobs, they don't exactly know how to land perfectly.
+
+They planned to go to Pochinki this time.
+
+The four of them managed to land at random houses in Pochinki.
+Pochinki has a lot of houses represented as a matrix of size n*n. Each house is a four walled (1x1) cell.
+Two houses are adjacent if they share a wall.
+
+But only a few of the houses( V of them to be exact) contain KAR.98k : a special gun which all four of them want.
+
+It takes only one second to go from one house to another. 
+
+All four of them want KAR.98k as soon as possible.
+
+What is the minimum time required for each player to get the KAR.98k?
+
+Input:
+The first line contains T - the number of test cases.
+Each test case consists of the following lines:
+The first line contains n - the size of matrix.
+It is followed by n*n integers represented value of each cell.
+If the value is 1 means it contains KAR.98k and 0 if it doesn't.
+
+The next line contains Q. The number of times they have played the game.(Number of queries -_-)
+
+Each query consists of 4 lines:
+i1 j1 - cell where Avinash landed.
+i2 j2 - cell where Somesh landed.
+i3 j3 - cell where Kanakdeep landed.
+i4 j4 - cell where Shibam landed.
+
+Output:
+For each query print four integers t1,t2,t3,t4
+the minimum time taken for each of them to get an AWP.
+
+
+Sample input:
+1
+4
+1 0 0 1
+0 1 1 0
+1 0 1 0
+0 0 0 1
+1
+1 2
+1 4
+3 1
+4 2
+
+Sample output:
+1 0 0 2
+
+
+Constraints:
+1<=T<=10
+1<=n<=500
+1<=v<=n*n
+1<=Q<=100000
+1<=i1,j1,i2,j2,i3,j3,i4,j4<=n
+
+
+
